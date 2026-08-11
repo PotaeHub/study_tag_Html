@@ -4,18 +4,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>แนะนำตัว กิติศักดิ์ ศรีนามหวด</title>
+    <title>แนะนำตัว - กิติศักดิ์ ศรีนามหวด</title>
+    <!-- Google Font: Prompt -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Prompt', sans-serif;
+            background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+            color: #334155;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            width: 100%;
+            max-width: 480px;
+            padding: 35px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 3px solid #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+        }
+
+        .info-table {
+            width: 100%;
+            margin: 15px 0 25px 0;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .info-table td {
+            padding: 8px 10px;
+            font-size: 0.95rem;
+        }
+
+        .info-table td:first-child {
+            font-weight: 500;
+            color: #64748b;
+            width: 38%;
+        }
+
+        .info-table td:last-child {
+            color: #1e293b;
+            font-weight: 400;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin: 25px 0 12px 0;
+            display: inline-block;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #3b82f6;
+            border-radius: 2px;
+        }
+
+        .lab-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+
+        .lab-table th {
+            background-color: #f8fafc;
+            color: #475569;
+            font-weight: 600;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .lab-table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #e2e8f0;
+            text-align: left;
+            color: #334155;
+        }
+
+        .lab-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .lab-table tr:hover {
+            background-color: #f8fafc;
+        }
+
+        .lab-table a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .lab-table a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            height: 50px;
+        }
+    </style>
 </head>
 
-<body
-    style="background-image: linear-gradient(to bottom , rgba(26, 30, 247, 0.774) ,rgba(26, 30, 247, 0.116)); height: 100vh; ">
-    <center>
-
+<body>
+    <div class="card">
         <div class="con-img">
-            <img src="profile.jpg" alt="" width="300px" height="350px" style="border-radius: 10px;">
+            <img src="profile.jpg" alt="Profile" class="profile-img">
         </div>
 
-        <table>
+        <table class="info-table">
             <tr>
                 <td>รหัสนักศึกษา :</td>
                 <td>69040233133</td>
@@ -26,7 +159,8 @@
             </tr>
             <tr>
                 <td>ชื่อเล่น :</td>
-                <td>โปเต้</td>
+                <g id="Group 4546">
+                    <td>โปเต้</td>
             </tr>
             <tr>
                 <td>สาขาวิชา :</td>
@@ -37,9 +171,99 @@
                 <td>อุดรธานี</td>
             </tr>
         </table>
-        <h2 style="background-image: linear-gradient(to top , rgb(240, 128, 128),rgba(240, 128, 128, 0.363)); width: 300px;">LAB ฝึกปฏิบัติ
-        </h2>
-        <table style="border: 1px solid #000000;">
+        <h2>ช่องทางติดต่อ</h2>
+        <div class="logo">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/potaei" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48"
+                    id="Facebook-1--Streamline-Plump" height="30" width="30">
+                    <desc>
+                        Facebook 1 Streamline Icon: https://streamlinehq.com
+                    </desc>
+                    <g id="facebook-1--media-facebook-social">
+                        <path id="Subtract" fill="#0000ff"
+                            d="M29.5054 46.4452c0.007 -0.0664 0.0106 -0.1339 0.0106 -0.2021V30.0396h5.5389c0.8881 0 1.6875 -0.5848 1.8173 -1.4633 0.2147 -1.4533 0.1235 -2.7748 -0.0154 -3.7145 -0.1275 -0.8627 -0.8963 -1.4306 -1.7683 -1.4306H29.516c0 -4.9935 0.831 -5.7201 5.5149 -5.811 0.8987 -0.0174 1.7055 -0.6108 1.8359 -1.5002 0.2193 -1.495 0.1319 -2.8012 -0.0057 -3.7201 -0.1271 -0.8488 -0.8882 -1.4021 -1.7464 -1.3946 -8.2784 0.0722 -12.9934 1.051 -12.9934 12.4259h-4.2888c-0.8335 0 -1.5735 0.5224 -1.6996 1.3463 -0.1358 0.8877 -0.2179 2.1744 0.0088 3.7394 0.131 0.9041 0.9442 1.5227 1.8578 1.5227h4.1218v16.4543c-6.41 -0.0421 -10.9981 -0.2951 -13.9856 -0.5378 -3.28785 -0.2671 -5.82468 -2.804 -6.09181 -6.0918C1.77808 36.5927 1.5 31.4014 1.5 24c0 -7.4014 0.27808 -12.5927 0.54389 -15.8643 0.26713 -3.28786 2.80396 -5.82468 6.09182 -6.09181C11.4073 1.77807 16.5986 1.5 24 1.5c7.4014 0 12.5927 0.27808 15.8643 0.54389 3.2878 0.26713 5.8247 2.80396 6.0918 6.09181 0.2658 3.2716 0.5439 8.4629 0.5439 15.8643 0 7.4014 -0.2781 12.5927 -0.5439 15.8643 -0.2671 3.2879 -2.804 5.8247 -6.0918 6.0918 -2.3904 0.1942 -5.8056 0.395 -10.3589 0.4891Z"
+                            stroke-width="1"></path>
+                    </g>
+                </svg>
+            </a>
+
+
+            <!-- instagram -->
+            <a href="https://www.instagram.com/pzfu_tt/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 34 34" id="Instagram--Streamline-Core"
+                    height="30" width="30">
+                    <desc>
+                        Instagram Streamline Icon: https://streamlinehq.com
+                    </desc>
+                    <!-- Define a two-color gradient -->
+                    <defs>
+                        <linearGradient id="twoColorGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#F58529; stop-opacity:1" /> <!-- Orange -->
+                            <stop offset="100%" style="stop-color:#DD2A7B; stop-opacity:1" /> <!-- Pink -->
+                        </linearGradient>
+                    </defs>
+                    <g id="instagram">
+                        <path id="Vector" stroke="url(#twoColorGradient)" stroke-linecap="round" stroke-linejoin="round"
+                            d="M25.09491428571428 8.849811428571428c-0.3353857142857143 0 -0.6071428571428571 -0.27182999999999996 -0.6071428571428571 -0.6071428571428571s0.2717571428571428 -0.6071428571428571 0.6071428571428571 -0.6071428571428571"
+                            stroke-width="3"></path>
+                        <path id="Vector_2" stroke="url(#twoColorGradient)" stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M25.09491428571428 8.849811428571428c0.3353857142857143 0 0.6071428571428571 -0.27182999999999996 0.6071428571428571 -0.6071428571428571s-0.2717571428571428 -0.6071428571428571 -0.6071428571428571 -0.6071428571428571"
+                            stroke-width="3"></path>
+                    </g>
+                    <path id="Rectangle 2" stroke="url(#twoColorGradient)" stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.084384571428571 8.333424285714285c0 -3.451072857142857 2.7976511428571427 -6.248743428571427 6.248748285714286 -6.248743428571427h16.663424285714285c3.4509999999999996 0 6.248714285714285 2.7976705714285712 6.248714285714285 6.248743428571427v16.663375714285714c0 3.4509999999999996 -2.797714285714285 6.248714285714285 -6.248714285714285 6.248714285714285H8.333132857142857c-3.451097142857143 0 -6.248748285714286 -2.797714285714285 -6.248748285714286 -6.248714285714285V8.333424285714285Z"
+                        stroke-width="3"></path>
+                    <path id="Ellipse 11" stroke="url(#twoColorGradient)" stroke-linecap="round" stroke-linejoin="round"
+                        d="M10.472 16.66485714285714a6.192857142857142 6.192857142857142 0 1 0 12.385714285714284 0 6.192857142857142 6.192857142857142 0 1 0 -12.385714285714284 0"
+                        stroke-width="3"></path>
+                    </g>
+                </svg>
+            </a>
+
+
+            <!-- call -->
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 34 34" id="Incoming-Call--Streamline-Core"
+                height="30" width="30">
+                <defs>
+                    <linearGradient id="call-twoColorGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#598a43; stop-opacity:1" /> <!-- Orange -->
+                        <stop offset="100%" style="stop-color:#6CF230; stop-opacity:1" /> <!-- Pink -->
+                    </linearGradient>
+                </defs>
+                <desc>
+                    Incoming Call Streamline Icon: https://streamlinehq.com
+                </desc>
+                <g id="incoming-call--android-phone-mobile-device-smartphone-iphone-ringing-incoming-call">
+                    <path id="Union" fill="url(#call-twoColorGradient)" fill-rule="evenodd"
+                        d="M15.542371428571427 14.56020857142857c-0.08543714285714286 0.2047285714285714 -0.20990142857142857 0.3970471428571428 -0.3733928571428571 0.5655414285714285 -0.013065714285714285 0.013478571428571428 -0.026325714285714286 0.02676285714285714 -0.03980428571428571 0.03982857142857143 -0.3267157142857143 0.31680714285714284 -0.7717514285714285 0.512282857142857 -1.2624199999999999 0.5137157142857143l-0.005464285714285713 0h-0.0006799999999999999l-7.93037857142857 0.00002428571428571428c-0.7366828571428571 0 -1.4008485714285712 -0.44379714285714283 -1.6827814285714284 -1.1244042857142857 -0.2819085714285714 -0.6806314285714286 -0.12606714285714285 -1.4640642857142856 0.39483714285714283 -1.9849685714285712l2.6775728571428568 -2.677597142857143 -6.076516428571429 -6.076528571428571c-0.7113139999999999 -0.7113042857142856 -0.7113139999999999 -1.8645672857142854 0 -2.575878857142857 0.7113115714285714 -0.7113139999999999 1.8645721428571427 -0.7113139999999999 2.575900714285714 0l6.076528571428571 6.076518857142856 2.6775728571428568 -2.6775728571428568c0.5209285714285714 -0.5209285714285714 1.3043371428571429 -0.6767457142857143 1.9849685714285712 -0.39483714285714283 0.6806314285714286 0.2819328571428571 1.1244042857142857 0.9460742857142856 1.1244042857142857 1.6827814285714284l0 7.931034285714285c0 0.24895285714285714 -0.049931428571428564 0.48622428571428566 -0.14034714285714284 0.7023428571428572Zm0.8189871428571427 17.689277142857144c-1.2589714285714284 0.8106571428571427 -2.7574728571428566 1.165957142857143 -4.246405714285714 1.0068857142857142 -1.4889085714285712 -0.1588285714285714 -2.878561428571428 -0.8227999999999999 -3.93788 -1.8811714285714283l-0.9228571428571428 -0.9228571428571428c-0.40931142857142855 -0.4135857142857143 -0.6389085714285714 -0.9721571428571427 -0.6389085714285714 -1.5542857142857143 0 -0.5818857142857142 0.22959714285714283 -1.1404571428571428 0.6389085714285714 -1.5542857142857143l3.8857142857142857 -3.8613799999999996c0.4096271428571428 -0.40782999999999997 0.9641185714285714 -0.6367957142857142 1.542142857142857 -0.6367957142857142s1.1325157142857143 0.22896571428571427 1.542142857142857 0.6367957142857142c0.4137557142857142 0.40933571428571425 0.9722785714285713 0.6389328571428571 1.5542857142857143 0.6389328571428571 0.5820071428571428 0 1.1405299999999998 -0.22959714285714283 1.5542857142857143 -0.6389328571428571l6.192857142857142 -6.192857142857142c0.40933571428571425 -0.4137314285714286 0.6389328571428571 -0.9722542857142856 0.6389328571428571 -1.5542857142857143 0 -0.5820071428571428 -0.22959714285714283 -1.1405299999999998 -0.6389328571428571 -1.5542857142857143 -0.40782999999999997 -0.4096028571428571 -0.6367957142857142 -0.9641185714285714 -0.6367957142857142 -1.542142857142857s0.22896571428571427 -1.1325157142857143 0.6367957142857142 -1.542142857142857l3.739927142857143 -3.8857142857142857c0.4138285714285714 -0.40931142857142855 0.9723999999999998 -0.6389085714285714 1.5542857142857143 -0.6389085714285714 0.5821285714285713 0 1.1406999999999998 0.22959714285714283 1.5542857142857143 0.6389085714285714l0.9228571428571428 0.9228571428571428c1.0773142857142857 1.044382857142857 1.7638714285714283 2.426628571428571 1.9450428571428569 3.9160957142857145 0.1814142857142857 1.4894428571428568 -0.1537285714285714 2.9959828571428573 -0.9493285714285714 4.26819 -4.2347 6.287061428571428 -9.64431857142857 11.696679999999999 -15.931355714285713 15.931379999999999Z"
+                        clip-rule="evenodd" stroke-width="2.4286"></path>
+                </g>
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" id="Next--Streamline-Core"
+                height="30" width="30">
+                <desc>
+                    Next Streamline Icon: https://streamlinehq.com
+                </desc>
+                <g id="next--next-arrow-right-keyboard">
+                    <path id="Vector" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M0.5 7h10"
+                        stroke-width="1"></path>
+                    <path id="Vector_2" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+                        d="M7 10.5 10.5 7 7 3.5" stroke-width="1"></path>
+                    <path id="Vector_3" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M13.5 3.5v7"
+                        stroke-width="1"></path>
+                </g>
+            </svg>
+            <p>082-292-7875</p>
+        </div>
+
+        <h2 class="section-title">LAB ฝึกปฏิบัติ</h2>
+
+        <table class="lab-table">
             <thead>
                 <tr>
                     <th>ชื่อ Lab</th>
@@ -49,24 +273,31 @@
             <tbody>
                 <tr>
                     <td><a href="exc1.html">exc.1</a></td>
-                    <td>จัดรูปแบบบตัวอักษร</td>
+                    <td>จัดรูปแบบตัวอักษร</td>
                 </tr>
                 <tr>
                     <td><a href="exc2.html">exc.2</a></td>
-                    <td>จัดรูปแบบบย่อหน้า</td>
+                    <td>จัดรูปแบบย่อหน้า</td>
                 </tr>
                 <tr>
                     <td><a href="exc3.html">exc.3</a></td>
-                    <td>จัดรูปแบบการแบ่งหน้าจอด้วย</td>
+                    <td>จัดรูปแบบการแบ่งหน้าจอด้วย div</td>
                 </tr>
                 <tr>
                     <td><a href="exc4.html">exc.4</a></td>
                     <td>จัดรูปแบบด้วย style</td>
                 </tr>
+                <tr>
+                    <td><a href="exc5.html">exc.5</a></td>
+                    <td>การแทรกรูปภาพบนหน้าเว็บเพจ</td>
+                </tr>
+                <tr>
+                    <td><a href="exc6.html">exc.6</a></td>
+                    <td>การสร้างคำสั่งการเชื่อมโยง</td>
+                </tr>
             </tbody>
-
         </table>
-    </center>
+    </div>
 </body>
 
 </html>
